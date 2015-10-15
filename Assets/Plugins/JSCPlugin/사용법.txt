@@ -10,7 +10,8 @@
  - 결과 : v : a12ifs
  
 #아이폰
- - 개발시작 아직 안함.
+ - 안드로이드와 비슷함
+ - pinfo 에 URL Scheme 추가 스킴 내용은 안드로이드 정보와 같음
  
 #플러그인이 잘 되는지 확인을 위한 테스트코드
  - JSCPlugin.Instance.callTest("테스트 문구");
