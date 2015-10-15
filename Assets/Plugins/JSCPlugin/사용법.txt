@@ -1,0 +1,17 @@
+#안드로이드
+ - 매니페스트 파일에 URL Scheme 설정을 한다.
+ - URL scheme : jscplugin
+ - URL host : com.jscgames.urlscheme
+ - <data android:host="com.jscgames.urlscheme" android:scheme="jscplugin" />
+ - 원하는 파라메터 키와 값을 넣는다
+ - 예시 : jscplugin://com.jscgames.urlscheme?k=a12ifs
+ - JSCPlugin.Instance.getURLScheme(param Key); 메소드를 이용해 urlscheme 값을 가져온다.
+ - 예시 : string v = JSCPlugin.Instance.getURLScheme(k);
+ - 결과 : v : a12ifs
+ 
+#아이폰
+ - 개발시작 아직 안함.
+ 
+#플러그인이 잘 되는지 확인을 위한 테스트코드
+ - JSCPlugin.Instance.callTest("테스트 문구");
+ - debug로 찍힌다. 뭐가? 안알랴쥼.
