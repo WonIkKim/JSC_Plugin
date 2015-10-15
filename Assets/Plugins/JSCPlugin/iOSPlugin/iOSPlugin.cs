@@ -12,7 +12,7 @@ public class iOSPlugin : IJSCPlugin
     [DllImport("__Internal")]
     private static extern string _getUrlScheme(string paramKey);
 
-    public static string getURLScheme(string paramKey)
+    public string getURLScheme(string paramKey)
     {
         if (Application.platform == RuntimePlatform.IPhonePlayer)
             return _getUrlScheme(paramKey);
@@ -24,7 +24,7 @@ public class iOSPlugin : IJSCPlugin
     [DllImport("__Internal")]
     private static extern string _testCall();
 
-    public static string TestCall()
+    public string TestCall()
     {
         if (Application.platform == RuntimePlatform.IPhonePlayer)
             return _testCall();

@@ -29,6 +29,8 @@ public class JSCPlugin : MonoBehaviour {
     {
 #if UNITY_ANDROID
         jscPlugin = new AndroidPlugin();
+#elif UNITY_IPHONE || UNITY_IOS
+        jscPlugin = new iOSPlugin();
 #else
         jscPlugin = new DefaultPlugin();
 #endif
